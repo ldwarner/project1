@@ -1,0 +1,166 @@
+
+.book_cover{
+	width: 400px;
+	height: 600px;
+	top: 50%;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+
+.background{
+	background-color: #ffdb27;
+	width: 400px;
+	height: 600px;
+	top: 50%;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+}
+
+.cover{
+	top: 50%;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+.title{
+	top: 50%;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	mix-blend-mode: multiply;
+}
+
+.black_dot {
+  height: 25px;
+  width: 25px;
+  background-color: #151717;
+  border-radius: 50%;
+  top: 300px;
+  left: 303px;
+  margin: 0;
+  position: relative;
+  animation: black_move .75s alternate infinite cubic-bezier(0,0,1,1);
+}
+
+@keyframes black_move{
+  0% {top: 275px; left: 303px;}
+  100% {top:325px; left: 303px;}
+}
+
+.red_dot {
+  height: 35px;
+  width: 35px;
+  background-color: red;
+  border-radius: 50%;
+  top: 178px;
+  left: 185px;
+  margin: 0;
+  position: relative;
+  animation: red_move 1.2s alternate infinite cubic-bezier(0,0,1,1);
+}
+
+@keyframes red_move{
+  0% { left: 205px;}
+  100% { left: 160px;}
+}
+
+.green_dot {
+  height: 35px;
+  width: 35px;
+  background-color: #37b34a;
+  border-radius: 50%;
+  top: 203px;
+  left: 80px;
+  margin: 0;
+  position: absolute;
+}
+
+.purple_dot {
+  height: 10px;
+  width: 10px;
+  background-color: #624296;
+  border-radius: 50%;
+  top: 325px;
+  left: 95px;
+  margin: 0;
+ position: absolute;
+  animation: purple_move .75s alternate infinite cubic-bezier(0,0,1,1);
+  transform: translate(-50%, -50%);
+}
+
+@keyframes purple_move{
+  0% {width: 15px; height: 15px;}
+  100% {width: 25px; height: 25px;}
+}
+
+.small_dot{
+  height: 8px;
+  width: 8px;
+  background-color: #151717;
+  border-radius: 50%;
+  top: 110px;
+  left: 93px;
+  margin: 0;
+  position: relative;
+  animation: small_move .75s alternate infinite cubic-bezier(0,0,1,1);
+}
+
+@keyframes small_move{
+  0% {top: 70px;}
+  100% {top:30px;}
+}
+
+.yellow_dot{
+  height: 30px;
+  width: 30px;
+  background-color: yellow;
+  border-radius: 50%;
+  top: 413px;
+  left: 185px;
+  margin: 0;
+  position: absolute;
+}
+
+.cyan_square{
+  height: 32px;
+  width: 0px;
+  background-color: #3fa7ce;
+  top: 345px;
+  left: 183px;
+  margin: 0;
+  position: relative;
+  animation: cyan_move 2s infinite cubic-bezier(1,0,0,1);
+}
+
+@keyframes cyan_move{
+  0%, 100% {left: 180px; width: 0px;}
+  50% {left: 180px; width: 35px;}
+}
+
+.author{
+	font-family: Times New Roman;
+	color: red;
+	font-size: 18px;
+	border-radius: 50%;
+  	top: 415px;
+  	left: 65px;
+  	margin: 0;
+  	z-index: 1;
+  	position: absolute;
+  	transform: rotate(90deg);
+}
+
+.book_cover:hover .background{
+	background-color: #fc6530;
+}
+
+.book_cover:hover .author{
+  color: #151717;
+}
